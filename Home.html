@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vertical Navigation Bar</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/3d8f60e7df.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+  <div class="container d-flex">
+    <div class="nav-container">
+      <label for="nav-check-box">
+        <input type="checkbox" name="checkBox" id="nav-check-box" onclick="showNavbar()" />
+        <i class="fas fa-bars menu-icon text-white" id="menu-icon"></i>
+      </label>
+
+      <!-- left Vertival Navbar -->
+      <nav id="navbar" class="text-white">
+        <ul>
+          <li>
+            <i class="icon fas fa-tachometer-alt"></i>
+            <a href="#" class="hide iconText text-white">Dashboard</a>
+            <!-- class="text-white" -->
+          </li>
+          <li>
+            <i class="icon fas fa-home"></i>
+            <a href="#" class="hide iconText">Site Home</a>
+          </li>
+          <li>
+            <i class="icon far fa-calendar-alt"></i>
+            <a href="#" class="hide iconText">Calendar</a>
+          </li>
+          <li>
+            <i class='icon far fa-copy'></i>
+            <a href="#" class="hide iconText">Private Files</a>
+          </li>
+          <input type="checkbox" name="check-box" id="drop-check-box" onclick="transform()">
+          <label for="drop-check-box">
+            <li id="drop-down">
+              <i class="icon fas fa-graduation-cap"></i>
+              <a href="#" class="iconText">My Courses</a>
+              <i class="fas fa-chevron-left" id='drop-btn'></i>
+          </label>
+          </li>
+          <div class="drop-content">
+            <a href="#" class="drop-content-Anchor">
+            </a>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <!-- Main Body -->
+    <div class="body-container">
+      <header id="header">
+        <div class="head-content d-flex">
+          <div id="logo">
+            <img src="/logo.jpg" alt="Logo">
+          </div>
+          <div id="head__profile">
+            <span id="time">
+            </span>
+            <a href="#" class="active-effect">
+              <i class="far fa-bell"></i>
+            </a>
+            <a href="#" class="active-effect">
+              <i class="far fa-comment"></i>
+            </a>
+            <!-- Profile Menu -->
+            <a href="#" id='profile'>
+              <img src="/profile.jpg" alt="Profile">
+            </a>
+            <a href="#" class="active-effect">
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div id="body-content">
+        <div id="search-bar-container" class='d-flex'>
+          <h1 id='search-container-heading'>Working Productivity</h1>
+          <div id='search-box-container' class="align-center display-flex ">
+            <h4>Search</h4><input type="search" name="search-box" id="search-box" placeholder="search for anything">
+          </div>
+        </div>
+        <div class="grey-text" style="font-weight: bold;">Let's check your progress</div>
+      </div>
+      <section id='progress-section'>
+        <div id="progress-section-container" class="d-flex">
+          <div id="progress-boxes-container">
+            <div id="box-1" class="progress-box">
+              <div class="box-arrow">
+                <div class="progress-day grey-text">
+
+                </div>
+                <div class="progress-date">
+
+                </div>
+              </div>
+              <h3>Productive</h3>
+              <div class="percent-circle">
+                85%
+              </div>
+              <div class="line">
+
+              </div>
+              <div class="productive-time-container">
+                <h3 style="font-size:100%;">Productive Time</h3>
+                <div>
+                  <div class="productive-time">P Time</div>
+                </div>
+              </div>
+              <div class="productive-work-container">
+                <h3 style="font-size:100%;">Time At Work</h3>
+                <div>
+                  <div class="productive-work">P Work</div>
+                </div>
+              </div>
+            </div>
+            <div id="box-2" class="progress-box">
+              <div class="box-arrow">
+                <div class="progress-day grey-text">
+
+                </div>
+                <div class="progress-date">
+                </div>
+              </div>
+              <h3 class="white-text">Productive</h3>
+              <div class="percent-circle">
+                85%
+              </div>
+              <div class="line">
+
+              </div>
+              <div class="productive-time-container white-text">
+                <h3 style="font-size:100%;">Productive Time</h3>
+                <div>
+                  <div class="productive-time">P Time</div>
+                </div>
+              </div>
+              <div class="productive-work-container white-text">
+                <h3 style="font-size:100%;">Time at Work</h3>
+                <div>
+                  <div class="productive-work">P Work</div>
+                </div>
+              </div>
+            </div>
+            <div id="box-3" class="progress-box">
+              <div class="box-arrow">
+                <div class="progress-day grey-text">
+
+                </div>
+                <div class="progress-date">
+                </div>
+              </div>
+              <h3 class="white-text">Productive</h3>
+              <div class="percent-circle">
+                85%
+              </div>
+              <div class="line">
+
+              </div>
+              <div class="productive-time-container white-text">
+                <h3 style="font-size:100%;">Productive Time</h3>
+                <div>
+                  <div class="productive-time">P Time</div>
+                </div>
+              </div>
+              <div class="productive-work-container white-text">
+                <h3 style="font-size:100%;">Time at Work</h3>
+                <div>
+                  <div class="productive-work">P Work</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="progress-meter">
+            <span class='month'>Statistics on <span id="month"></span></span>
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65"></div>
+            <div class="small-prog-bar">
+              <div class="d-flex">
+                <div style="flex-grow: 1;">Tasks</div>
+                <div>20%</div>
+              </div>
+              <progress class="progress-bar" value="20" max="100"></progress>
+            </div>
+            <div class="small-prog-bar">
+              <div class="d-flex">
+                <div style="flex-grow: 1;">Complete Works</div>
+                <div>50%</div>
+              </div>
+              <progress class="progress-bar" value="50" max="100"></progress>
+            </div>
+            <div class="small-prog-bar">
+              <div class="d-flex">
+                <div style="flex-grow: 1;">Hours</div>
+                <div>30%</div>
+              </div>
+              <progress class="progress-bar" value="30" max="100"></progress>
+            </div>
+          </div>
+      </section>
+    </div>
+  </div>
+</body>
+<script src="home.js"></script>
+
+</html>

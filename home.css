@@ -1,0 +1,329 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.display-flex,
+.d-flex {
+  display: flex;
+}
+.text-align-center {
+  text-align: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.align-center{
+  align-items: center;
+}
+.grey-text{
+  color: gray;
+}
+.text-dark{
+  color: black;
+}
+.text-white{
+  color: white;
+}
+.white-text{
+  color: white;
+}
+.nav-container {
+  position:fixed;
+  display: inline-block;
+  width: 80px;
+  height: 100%;
+  background-color: #1466a8;  
+  text-align: center;  
+}
+.menu-icon {
+  display: inline-block;
+  margin:auto;
+  padding: 0.9rem 1.8rem 0.9rem 1.8rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.menu-icon:visited {
+  border: 1px solid blue;
+}
+#navbar {
+  position: relative;
+  margin-top:0.5rem;
+  height: 100%;
+  z-index: 1200;
+  background-color: #1466a8;  
+}
+#navbar ul {
+  display: flex;
+  flex-direction: column;
+}
+ul li {
+  list-style: none;
+  margin: 0.3rem;
+  margin-bottom: 0;
+  cursor: pointer;
+  width: inherit;
+  text-align: left;
+}
+#nav-check-box {
+  display: none; 
+}
+.fa-tachometer-alt,
+.fa-home,
+.fa-calendar-alt,
+.fa-copy,
+.fa-graduation-cap {
+  display: inline-block;
+  padding: 0.9rem 0.2rem 0.9rem 1.6rem;
+  color:white;
+  font-size: 1rem;
+}
+ul li a {
+  display: none;
+  text-decoration: none;
+  color:white;
+  font-size: 1rem;
+}
+
+#drop-check-box{
+  display: none;
+}
+#drop-down{
+  position: relative;
+  padding-right: 1.3rem;
+}
+
+ul .drop-content{
+  display: none;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.drop-content a{
+  display: none;
+  text-decoration: none;
+  color: white;
+}
+.drop-content a:hover{
+  background-color: mediumaquamarine;
+}
+
+ul #drop-btn{
+  display: none;
+  margin-top: 1rem;
+  float: right;
+  border: none;
+}
+
+/* Body */
+
+.body-container{
+  margin-left: 100px;
+  margin-right: 1.5%;
+  width: 100%;
+}
+.head-content{
+  margin: 0.3rem 0.5rem 0.1em 0;
+}
+#logo{
+  flex-grow: 1;
+}
+#logo img{
+  display: inline;
+  height: 5rem;
+  width: 5rem; 
+}
+#head__profile{
+  display: flex;
+  align-items: center;
+}
+#time{
+  margin:0 1rem;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: gray;
+}
+#head__profile .fa-bell, .fa-comment{
+  font-size: 1.3rem;
+  margin: 0 0.7rem 0 1rem;
+}
+#head__profile img{
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0.7rem 0 0.7rem;
+  border-radius: 50%;
+}
+#head__profile .fa-chevron-down{
+  font-size: 0.8rem;
+  margin-left:0.4rem;
+}
+.active-effect:active{
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#search-bar-container{
+  padding: 0.5% 0 0.5% 0;
+  width: 100%;
+  /* line-height: 1.8rem; */
+  /* border: 2px solid blue; */
+}
+#search-container-heading{
+  text-shadow: #65baff;
+  text-shadow: 12rem;
+  font-size: 170%;
+  flex-grow: 1;
+}
+#search-box-container{
+  width: 48%;
+  justify-content: right;
+  /* border: 2px solid red; */
+}
+#search-box{
+  margin-left: 0.3rem;
+  padding: 2.3%;
+  width: 56%;
+  height: 10%;
+  outline: none;
+  border-radius: 1em;
+  font-size: 90%;
+  background-color: #e6f7f2;
+  border: 2px solid rgb(185, 185, 185);
+}
+#progress-section-container{
+  margin-top: 1rem;
+}
+#progress-boxes-container{
+  width: 60%;
+}
+.progress-box{
+  position:relative;
+  display: flex;
+  margin-top:1rem ;
+  align-items: center;
+  width: 100%;
+  height: 28%;
+  border-radius: 1rem;
+  z-index: -1;
+}
+#box-1{
+  background-color: rgb(232, 245, 155);
+}
+#box-2{
+  background-color: rgb(93, 175, 133);
+}
+#box-3{
+  background-color:rgb(0, 78, 77);
+}
+.box-arrow{  
+  margin: auto 0 auto 2%; 
+  width: 17%;
+  height: 70%;
+  align-items: center;
+  padding: 1% 2%;
+  background-color: white;
+  clip-path: polygon(0 0, 0 100%, 50% 100%, 60% 50%, 50% 0);
+}
+.progress-date{
+  font-size: 150%;
+  font-weight: bold;
+}
+.progress-day{
+  font-size: 105%;
+}
+.percent-circle{
+  margin-left: 0.6rem;
+  padding: 0.2rem;
+  background-color: white;
+  font-size: 72%;
+  font-weight: bold;
+  border-radius: 1em;
+}
+.line{
+  margin: 4% 10%;
+  height: 50%;
+  width: 0.3%;
+  background-color: rgb(170, 170, 170);
+}
+.productive-time-container{
+  text-align: center;
+  line-height: 170%;
+}
+.productive-work-container{
+  margin-left: 5%;
+  line-height: 170%;
+  text-align: center;
+}
+.productive-time{
+  font-size: 120%;
+  font-weight: bold;
+}
+.productive-work{
+  font-size: 120%;
+  font-weight: bold;
+}
+#progress-meter{
+  margin:0 auto 0;
+  padding: 0 2%;
+  width: 45%;
+  text-align: center;
+}
+.month{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Circular Progress Bar Meter */
+
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  margin: 0.6rem auto 0;
+  --size: 8rem;
+  --fg: rgb(33, 167, 0);
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 85%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
+.small-prog-bar{
+  margin:3% 1%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: bold;
+}
+.progress-bar{
+  width: 100%;
+}

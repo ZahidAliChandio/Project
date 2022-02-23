@@ -78,13 +78,13 @@ body{
     margin: 1rem auto;
 }
 #login-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin: 2.5em 7em 0 7em;
     /* border: 2px solid blue; */
 }
 #loginLeft{
-    /* padding: 3em 4em 4em 4em; */
-    padding: 3% 4% 4% 4%;
-    width: 80%;
+    padding: 5% 4% 5% 5%;
     background-color: white;
 }
 .fa-key,

@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
+
 <body>
     <div id="body-container">
         <div id="login-container">
             <div id="login-form">
+                <div id="input-form">
+                    <i class="fas fa-user-circle icons"></i>
+                    <input type="email" name="email" id="email" class="input" placeholder="Username or email">
 
+                    <i class="fas fa-key icons" style="color:black;"></i>
+                    <input type="password" name="password" id="password" class="input" placeholder="Password">
+
+                    <i class="far fa-eye" id="togglePassword"></i>
+                    <input type="checkbox" name="checkBox" id="checkBox">
+
+                    <span class="grey-text">Remember me</span>
+                    <a href="#" id="loginBtn">LOGIN</a>
+
+                    <a href="#" class="blueText decoNone" style="font-weight: bold;">Register Now</a>
+                    <a href="#" id="forgotPassword" class="greyText">Forgot Password?</a>
+
+                </div>
             </div>
             <div id="login-image">
-                
+
             </div>
         </div>
     </div>
 </body>
+
 </html>

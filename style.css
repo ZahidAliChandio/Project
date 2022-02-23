@@ -33,11 +33,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* .container{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-} */
 body{
     background-color: rgb(224, 224, 224);
 }
@@ -72,19 +67,18 @@ body{
     text-decoration: none;
 }
 #software-house-heading{
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     width: fit-content;
     color:olive;
     margin: 1rem auto;
 }
 #login-container{
-    margin: 2.5em 7em 0 7em;
-    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 3% 12% 0 12%;
 }
 #loginLeft{
-    /* padding: 3em 4em 4em 4em; */
-    padding: 3% 4% 4% 4%;
-    width: 80%;
+    padding: 5% 4% 5% 5%;
     background-color: white;
 }
 .fa-key,
@@ -107,7 +101,7 @@ body{
     border: 2px solid rgb(211, 211, 211);
 }
 .fa-eye{
-    margin-left: -33px; 
+    margin-left: -2.5rem; 
     cursor: pointer;
 }
 
@@ -133,62 +127,77 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
-#loginFromSiteContainer{
+#login-from-sites-container{
     display: grid;
-    grid-template-columns:80%;
+    justify-content: center;
     grid-template-rows: 3.1rem 3.2rem 3.2rem;
     margin-top:1.3em;
 }
 .loginFromSite{
-    margin: 0.8rem 0 0 0;
     text-align: center;
 }
 .siteIcons{
     display: inline-block;
+    font-size: 0.9rem;
+    opacity: 0.8;
     padding: 0.3em 0.4em;
     border-radius: 0.3em;
 }
-.fa-facebook-square{
-    background-color: blue;
-    color: white;
-}
-.fa-twitter{
-    background-color: skyblue;
-    color: white;
-}
-.fa-google{
-    background-color: red;
-    color:white;
-}
 .siteLogins{
-    padding: 0.6rem 0;
+    padding: 0.25rem 0;
     color: white;
     display: inline-block;
-    width: 80%;
+    font-size: 0.9rem;
+    width: 11.4rem;
     text-decoration: none;
     border-radius: 0.3rem;
 }
-#facebookLogin{
-    background-color: blue;
-    color: white;
+#googleLogin,.fa-google,#facebookLogin,.fa-facebook-square{
+    color: #28a745;
+    background-color: transparent;
+    border:1px solid #28a745;
 }
-#twitterLogin{
-    background-color: skyblue;
-    color: white;
+#facebookLogin:hover, #googleLogin:hover,.fa-google:hover,.fa-facebook-square:hover{
+    background-color: #28a745;
+    color:white;
+    transition: all 0.3s ease-in;
 }
-#googleLogin{
-    background-color: red;
-    color: white;
+#twitterLogin,.fa-twitter{
+    color: #6c757d;
+    background-color: transparent;
+    border:1px solid #6c757d;
 }
+#twitterLogin:hover,.fa-twitter:hover{
+    background-color: #6c757d;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
 #loginRightImage{
     max-width: 100%;
     height: 100%;
 }
+
+@media only screen and (max-width: 800px){
+    html{
+        font-size: 85%;
+    }
+}
 @media only screen and (max-width: 600px){
+    html{
+        font-size: 72%;
+    }
+    #login-container{
+        margin: 3% 8% 0 8%;
+        
+    }
+}
+@media only screen and (max-width: 450px){
     html{
         font-size: 70%;
     }
     #login-container{
-        margin:0;
+        margin: 3% 0% 0 0%;
+        /* margin: 0; */
     }
 }
